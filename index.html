@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body onload="fillTheList('All')">
+        <!--Start Of The Container-->
+        <div class="container">
+            <h1>
+                To Do List
+            </h1>
+            <!--Start of Input Container-->
+            <div class="inputContainer">
+                <img src="img/list.png" alt="List Icon">
+                <input type="text" id="txtNote" placeholder="e.g. Go to the market">
+                <button type="button" onclick="addNote()" id="btnAdd">Add</button>
+            <!--End Of Input Container-->
+            </div>
+
+            <!--Start of Content Container-->
+            <div class="contentContainer">
+                <div class="headContainer">
+                    <!--Start of filter Container-->
+                    <div class="filterContainer">
+                        <img src="img/filter_icon.png" alt="Filter Icon">
+                        <button type="button" id="btnAll" onclick="fillTheList('All'); changeClassName()">All </a>
+                        <button type="button" id="btnPending" onclick="fillTheList('Pending'); changeClassName()">Pending </a>
+                        <button type="button" id="btnCompleted" onclick="fillTheList('Completed'); changeClassName()">Completed </a>
+
+                    <!--End of filter Container-->
+                    </div>
+               
+
+                
+                    <!--Start of Clear Container-->
+                    <div class="clearContainer">
+                        <button type="button" onclick="clearAllItems()">
+                            <img src="img/eraser.png" alt="Eraser Icon">
+                            Clear All Items 
+                        </button>
+                    <!--End of Clear Container-->
+                    </div>
+                    <!--End of head Container-->
+                </div>
+                <hr>
+                <div class="listContainer" id="listContainer" >
+                    
+                    <ul id="listOfAllItems">
+
+                    </ul>
+                    <ul id="listOfPendingItems"></ul>
+                    <ul id="listOfCompletedItems"></ul>
+
+                <!--End of list Container-->
+                </div>
+               
+               
+                
+            <!--End of Content Container-->
+            </div>
+
+
+            </div>
+        <!--End Of the container-->
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

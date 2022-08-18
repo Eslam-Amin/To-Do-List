@@ -1,0 +1,188 @@
+*{
+    font-family: 'Kalam', cursive;
+    /*font-family: 'Shadows Into Light Two', cursive;*/
+}
+h1{
+    text-align: center;
+    font-family: 'Open-Sans', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+/*
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+*/
+.container{
+    width: 85%;
+    height: fit-content;
+    margin-left: 7%;
+    margin-right: 8%;
+
+}
+
+.inputContainer{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 4% 85% auto;
+    background-color: #f1f5f8;
+   
+}
+
+.inputContainer input{
+    margin: 0 0 0 0;
+    border: none;
+    background-color: transparent;
+    margin-right: 2px;
+    font-size: large;
+    margin-left: 2px;
+}
+
+.inputContainer button{
+    padding: 10px;
+    width: 100%;
+    float: right;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    background-color: #a5d5f8;
+    border: none;
+    font-size: large;
+    margin-left: auto;
+    margin-right: 0;
+
+}
+
+.inputContainer img{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+}
+
+
+.inputContainer input:focus{
+    outline: none;
+}
+.contentContainer{
+    
+    margin-top: 25px;
+    width: 80%;
+    margin-left: 70px;
+}
+
+
+
+.contentContainer img{
+    width:20px;
+    height:20px;
+}
+
+.headContainer .filterContainer img{
+    margin-top: 10px;
+}
+
+.headContainer button{
+    border: none;
+    background-color: transparent;
+    margin: 2px;
+    font-size: large;
+    transition: 0.3s;
+
+
+
+}
+ 
+.headContainer button:active{
+   color: red;
+}
+
+.filterContainer{
+    display: grid;
+    grid-template-columns: 10px 15% 30% 30%;
+    
+
+}
+
+
+.filterContainer button{
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+hr{ 
+    border: .1px dashed black;
+    border-style: dashed;
+    width: 50%;
+    margin:  0 0 0 0;
+    padding: 0 0 0 0;
+    height: .1px;
+}
+
+.clearContainer button{
+    float: right;
+    background-image: linear-gradient(to left, #d98080 , #eda2a2);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    
+}
+.headContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.listContainer{
+padding-left: 0;
+}
+.listContainer ul {
+    list-style: none;
+    line-height: 50px;
+    width: 100%;
+    padding-left: 0;
+}
+
+
+.listContainer ul li{
+    display: grid;
+    grid-template-columns: 20px 85% 5% 5%;
+}
+
+.listContainer img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+width: 15px;
+height: 15px;
+
+}
+
+.listContainer button{
+   background-color: transparent;
+   border: none;
+}
+label{
+    width: fit-content;
+}
+
+.filterContainer button.active {
+    background-color: #f1f5f8;
+    color: red;
+}
+
+
+.filterContainer button:hover {
+    background-color: #f1f5f8;
+}
+
+
+  
