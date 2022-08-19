@@ -219,7 +219,7 @@ label{
         border-radius: 10px;
     }
     .inputContainer{
-        grid-template-columns: 8% 70% auto;
+        grid-template-columns: 9% 70% auto;
     }
     
     .filterContainer .filterBtn{
