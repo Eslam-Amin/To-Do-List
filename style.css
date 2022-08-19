@@ -116,12 +116,14 @@ img{
         width: 100%;
     }
 }
-.headContainer #btnClear {
+.filterContainer #btnClear {
     float: right;    
     background-image: linear-gradient(to left, #d98080 , #eda2a2);
     border-radius: 10px;
     color: white;
+    padding-bottom:5px ;
 }
+
  
 
 .headContainer button{
