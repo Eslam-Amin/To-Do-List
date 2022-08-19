@@ -1,5 +1,6 @@
 *{
     font-family: 'Kalam', cursive;
+    font-size:100%;
     /*font-family: 'Shadows Into Light Two', cursive;*/
 }
 h1{
@@ -9,6 +10,11 @@ h1{
 button{
     cursor: pointer;
 }
+img{
+    max-width:100%;
+    height:auto;
+}
+
 /*
 @media screen and (min-width: 800px) {
     .container {
@@ -31,7 +37,7 @@ button{
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
-    grid-template-columns: 4% 85% auto;
+    grid-template-columns: auto 70% auto;
     background-color: #f1f5f8;
    
 }
@@ -71,9 +77,9 @@ button{
 }
 .contentContainer{
     
-    margin-top: 25px;
+    margin-top: 2%;
     width: 80%;
-    margin-left: 70px;
+    margin-left: 10%;
 }
 
 
@@ -86,6 +92,37 @@ button{
 .headContainer .filterContainer img{
     margin-top: 10px;
 }
+/*
+.headContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+*/
+   
+@media screen and (max-width: 600px) {
+    .headContainer {
+      float: none;
+      width: 100%;
+    }
+   
+}
+
+@media screen and (max-width: 600px) {
+    .headContainer button {
+      float: none;
+      width: 100%;
+    }
+    hr{
+        width: 100%;
+    }
+}
+.headContainer #btnClear {
+    float: right;    
+    background-image: linear-gradient(to left, #d98080 , #eda2a2);
+    border-radius: 10px;
+    color: white;
+}
+ 
 
 .headContainer button{
     border: none;
@@ -94,22 +131,19 @@ button{
     font-size: large;
     transition: 0.3s;
 
-
-
 }
  
 .headContainer button:active{
    color: red;
+   
 }
-
+/*
 .filterContainer{
     display: grid;
-    grid-template-columns: 10px 15% 30% 30%;
-    
+    grid-template-columns: 2.5% 15% 30% 30% 10%;
 
 }
-
-
+*/
 .filterContainer button{
     text-align: center;
     margin-left: 15px;
@@ -117,28 +151,16 @@ button{
     cursor: pointer;
 }
 
-hr{ 
+hr{
     border: .1px dashed black;
     border-style: dashed;
-    width: 50%;
+    
     margin:  0 0 0 0;
     padding: 0 0 0 0;
-    height: .1px;
+    height: .1px;  
 }
 
-.clearContainer button{
-    float: right;
-    background-image: linear-gradient(to left, #d98080 , #eda2a2);
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
-    width: 200px;
-    
-}
-.headContainer{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+
 .listContainer{
 padding-left: 0;
 }
@@ -152,7 +174,7 @@ padding-left: 0;
 
 .listContainer ul li{
     display: grid;
-    grid-template-columns: 20px 85% 5% 5%;
+    grid-template-columns: 20px 85% 8% 8%;
 }
 
 .listContainer img{
