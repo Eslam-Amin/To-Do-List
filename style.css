@@ -29,7 +29,7 @@ img{
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
-    grid-template-columns: auto 70% auto;
+    grid-template-columns: 2.5% 87.5% 10%;
     background-color: #f1f5f8;
    
 }
@@ -60,7 +60,8 @@ img{
 .inputContainer img{
     width: 30px;
     height: 30px;
-    margin-top: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
@@ -91,16 +92,14 @@ img{
 }
 */
    
-@media screen and (max-width: 600px) {
-   
-}
-
 .filterContainer #btnClear {
     float: right;    
     background-image: linear-gradient(to left, #d98080 , #eda2a2);
     border-radius: 10px;
     color: white;
     padding-top: 0;
+    margin-right: 0;
+
 }
 
  
@@ -130,12 +129,16 @@ img{
     margin-right: 10px;
 }
 
+
+.filterContainer .filterBtn{
+    width: 105px;
+}
 hr{
-    border: .1px dashed black;
+    border: .01px dashed black;
     border-style: dashed;
     margin:  0 0 0 0;
     padding: 0 0 0 0;
-    height: .1px;  
+    height: .01px;  
     width: 50%;
 }
 
@@ -186,6 +189,7 @@ label{
 
 
 .filterContainer button:hover {
+    border-radius: 15px;
     background-color: #f1f5f8;
 }
 
@@ -198,6 +202,8 @@ label{
     }
     hr{
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #iconFilter{
         display: block;
@@ -211,6 +217,13 @@ label{
     .filterContainer button{
         margin-top: 5px;
         border-radius: 10px;
+    }
+    .inputContainer{
+        grid-template-columns: 8% 70% auto;
+    }
+    
+    .filterContainer .filterBtn{
+        width: 100%;
     }
      
 }

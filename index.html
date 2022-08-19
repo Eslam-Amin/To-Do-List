@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/headIcon.png" type="image/x-icon">
         <title>To-Do List</title>
@@ -27,9 +28,9 @@
                     <!--Start of filter Container-->
                     <div class="filterContainer">
                         <img src="img/filter_icon.png" alt="Filter Icon" id="iconFilter">
-                        <button type="button" id="btnAll" onclick="fillTheList('All'); changeClassName()">All </a>
-                        <button type="button" id="btnPending" onclick="fillTheList('Pending'); changeClassName()">Pending </a>
-                        <button type="button" id="btnCompleted" onclick="fillTheList('Completed'); changeClassName()">Completed </a>
+                        <button type="button" id="btnAll" class="filterBtn" onclick="fillTheList('All')">All </button>
+                        <button type="button" id="btnPending" class="filterBtn" onclick="fillTheList('Pending'); ">Pending </button>
+                        <button type="button" id="btnCompleted" class="filterBtn" onclick="fillTheList('Completed'); ">Completed </button>
                         <button type="button" id="btnClear" onclick="clearAllItems()">
                             <img src="img/eraser.png" alt="Eraser Icon">
                             Clear All Items 
