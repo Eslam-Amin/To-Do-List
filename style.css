@@ -176,7 +176,7 @@ padding-left: 0;
 
 .listContainer ul li{
     display: grid;
-    grid-template-columns: 20px 85% 8% 8%;
+    grid-template-columns: auto 85% 8% 8%;
 }
 
 .listContainer img{
