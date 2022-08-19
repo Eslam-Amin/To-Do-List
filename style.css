@@ -225,5 +225,8 @@ label{
     .filterContainer .filterBtn{
         width: 100%;
     }
+    .listContainer{
+        grid-template-columns: auto 83% 8.5% 8.5%;
+    }
      
 }
