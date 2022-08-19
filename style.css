@@ -1,11 +1,10 @@
 *{
-    font-family: 'Kalam', cursive;
+    font-family: 'Open-Sans', sans-serif;
     font-size:100%;
     /*font-family: 'Shadows Into Light Two', cursive;*/
 }
 h1{
     text-align: center;
-    font-family: 'Open-Sans', sans-serif;
 }
 button{
     cursor: pointer;
@@ -15,13 +14,6 @@ img{
     height:auto;
 }
 
-/*
-@media screen and (min-width: 800px) {
-    .container {
-      margin: 1em 2em;
-    }
-  }
-*/
 .container{
     width: 85%;
     height: fit-content;
@@ -100,28 +92,15 @@ img{
 */
    
 @media screen and (max-width: 600px) {
-    .headContainer {
-      float: none;
-      width: 100%;
-    }
    
 }
 
-@media screen and (max-width: 600px) {
-    .headContainer button {
-      float: none;
-      width: 100%;
-    }
-    hr{
-        width: 100%;
-    }
-}
 .filterContainer #btnClear {
     float: right;    
     background-image: linear-gradient(to left, #d98080 , #eda2a2);
     border-radius: 10px;
     color: white;
-    padding-bottom:5px ;
+    padding-top: 0;
 }
 
  
@@ -139,27 +118,25 @@ img{
    color: red;
    
 }
-/*
-.filterContainer{
-    display: grid;
-    grid-template-columns: 2.5% 15% 30% 30% 10%;
 
-}
-*/
 .filterContainer button{
     text-align: center;
-    margin-left: 15px;
     border-radius: 10px;
     cursor: pointer;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 8px;
+    margin-right: 10px;
 }
 
 hr{
     border: .1px dashed black;
     border-style: dashed;
-    
     margin:  0 0 0 0;
     padding: 0 0 0 0;
     height: .1px;  
+    width: 50%;
 }
 
 
@@ -176,17 +153,21 @@ padding-left: 0;
 
 .listContainer ul li{
     display: grid;
-    grid-template-columns: auto 85% 8% 8%;
+    grid-template-columns: auto 83% 8% 8%;
+}
+.listContainer input{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .listContainer img{
-display: block;
-margin-left: auto;
-margin-right: auto;
-margin-top: auto;
-margin-bottom: auto;
-width: 15px;
-height: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 15px;
+    height: 15px;
 
 }
 
@@ -210,3 +191,26 @@ label{
 
 
   
+@media screen and (max-width: 600px) {
+    .headContainer button {
+      float: none;
+      width: 100%;
+    }
+    hr{
+        width: 100%;
+    }
+    #iconFilter{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .headContainer {
+        float: none;
+        width: 100%;
+    }
+    .filterContainer button{
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+     
+}
