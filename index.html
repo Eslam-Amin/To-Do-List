@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>To-Do List</title>
 
         <link rel="stylesheet" href="style.css"> 
@@ -29,20 +29,15 @@
                         <button type="button" id="btnAll" onclick="fillTheList('All'); changeClassName()">All </a>
                         <button type="button" id="btnPending" onclick="fillTheList('Pending'); changeClassName()">Pending </a>
                         <button type="button" id="btnCompleted" onclick="fillTheList('Completed'); changeClassName()">Completed </a>
-
+                            <button type="button" id="btnClear" onclick="clearAllItems()">
+                                <img src="img/eraser.png" alt="Eraser Icon">
+                                Clear All Items 
+                            </button>
                     <!--End of filter Container-->
                     </div>
                
 
                 
-                    <!--Start of Clear Container-->
-                    <div class="clearContainer">
-                        <button type="button" onclick="clearAllItems()">
-                            <img src="img/eraser.png" alt="Eraser Icon">
-                            Clear All Items 
-                        </button>
-                    <!--End of Clear Container-->
-                    </div>
                     <!--End of head Container-->
                 </div>
                 <hr>
