@@ -58,8 +58,8 @@ img{
 }
 
 .inputContainer img{
-    width: 30px;
-    height: 30px;
+    width: fit-content;
+    height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -76,14 +76,16 @@ img{
 }
 
 
-
+#btnClear img{
+    margin-top: 8px;
+}
 .contentContainer img{
     width:20px;
     height:20px;
 }
 
 .headContainer .filterContainer img{
-    margin-top: 10px;
+    margin-right: 5px;
 }
 /*
 .headContainer{
@@ -98,7 +100,8 @@ img{
     border-radius: 10px;
     color: white;
     padding-top: 0;
-    margin-right: 0;
+    margin-right: -1px;
+    margin-left: auto;
 
 }
 
@@ -127,11 +130,26 @@ img{
     padding-right: 25px;
     padding: 8px;
     margin-right: 10px;
+    margin-left: 0px;
 }
 
+.filterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .filterContainer .filterBtn{
     width: 105px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-left: 0px;
 }
 hr{
     border: .01px dashed black;
@@ -214,7 +232,7 @@ label{
         float: none;
         width: 100%;
     }
-    .filterContainer button{
+    .filterContainer button {
         margin-top: 5px;
         border-radius: 10px;
     }
@@ -224,9 +242,20 @@ label{
     
     .filterContainer .filterBtn{
         width: 100%;
+        margin-top: 7px;
     }
+
     .listContainer ul li{
         grid-template-columns: auto 83% 9% 9%;
+    }
+    .filterContainer{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .filterContainer #btnClear{
+        margin-left: 0px;
+        margin-right: 0px;
+
     }
      
 }
