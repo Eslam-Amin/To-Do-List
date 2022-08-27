@@ -152,7 +152,12 @@ function fillTheList(tab){
         
     }
 }
-
+document.getElementById("txtNote").addEventListener("keypress",function (event){
+    if(event.key ==="Enter"){
+        event.preventDefault();
+        document.getElementById("btnAdd").click();
+    }
+})
 function addNote(){
     
 
